@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  kokoustest:
+    image: kokoustest:latest
+    container_name: kokoustest
+    expose:
+      - "3000"
+
+networks:
+  default:
+    external:
+      name: ohtup
